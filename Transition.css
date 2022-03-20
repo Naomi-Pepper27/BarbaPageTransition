@@ -1,0 +1,52 @@
+body{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+
+.Page1{
+    background-color: black;
+}
+.Page2{
+    background-color: pink;
+}
+
+.Page1, .Page2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+}
+
+h1{
+    color: palevioletred;
+}
+
+a{
+    color: antiquewhite;
+    text-decoration: none;
+    
+    padding: 10% 30%;
+
+}
+
+
+.slide-in{
+    animation: slide in 0.5s ease forwards;
+}
+
+@keyframes slide-in{
+    from{
+        transform: translateX(100%);
+        visibility: visible;
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
